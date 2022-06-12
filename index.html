@@ -1,0 +1,401 @@
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>E-Commerce Transactional E-Mail</title>
+		<style>
+			/* Global */
+			body {
+				padding: 0;
+				margin: 0;
+				line-height: 1.3em;
+				background-color: #f8fafc;
+			}
+			a {
+				color: #2969ff;
+				text-decoration: none;
+			}
+			img {
+				vertical-align: bottom;
+			}
+			table {
+				border-collapse: separate;
+				border-spacing: 0;
+			}
+			td,
+			tr {
+				padding: 0;
+				font-family: SF Pro Display, Arial, Helvetica, sans-serif;
+			}
+
+			/* Sections */
+			.wrapper {
+				padding-bottom: 40px;
+				width: 100%;
+				background-color: #f8fafc;
+				table-layout: fixed;
+			}
+			.webkit {
+				max-width: 544px;
+			}
+			.outer {
+				margin: 0 auto;
+				padding: 0;
+				width: 90%;
+				max-width: 544px;
+			}
+			.section {
+				width: 100%;
+			}
+			.header_social-icon {
+				padding-left: 24px;
+			}
+			.header_social-icon:first-child {
+				padding-left: 0px;
+			}
+			.header_social-icon > img {
+				max-width: 24px;
+			}
+			/* Spacing */
+			.section.section-order {
+				padding: 32px 32px 40px;
+			}
+			@media screen and (max-width: 420px) {
+				.section.section-order {
+					padding: 26px 20px 28px;
+				}
+			}
+			.product-item {
+				margin-bottom: 16px;
+			}
+			.product-item:last-child {
+				margin-bottom: 0px;
+			}
+			.product-item_image {
+				width: 0px;
+			}
+			.product-item_image > img {
+				max-width: 72px;
+			}
+			.product-item_detail {
+				padding-left: 24px;
+			}
+			.product-item_price {
+				text-align: right;
+			}
+			.section-summary-row {
+				width: 100%;
+				margin-bottom: 16px;
+			}
+			.section-summary-row:last-child {
+				margin-bottom: 0px;
+			}
+			/* Colours */
+			.text-medium-regular {
+				font-size: 14px;
+				line-height: 21px;
+				color: #94a3b8;
+			}
+			.text-large-regular {
+				font-size: 16px;
+				line-height: 24px;
+				color: #384860;
+			}
+			.text-large-regular-alt {
+				font-size: 16px;
+				line-height: 24px;
+				color: #202b3c;
+			}
+			.text-large-regular-alt a {
+				text-decoration: underline;
+			}
+			.text-large-bold {
+				font-size: 16px;
+				line-height: 24px;
+				font-weight: bold;
+				color: #121a26;
+			}
+			.button {
+				padding: 20px 32px;
+				height: 100%;
+				text-align: center;
+				color: #2969ff;
+				border: #2969ff solid 1px;
+			}
+			.button.fill {
+				color: #ffffff;
+				background-color: #2969ff;
+				border: #2969ff solid 1px;
+			}
+			@media screen and (max-width: 320px) {
+				.button {
+					padding: 20px 15px;
+				}
+			}
+			/* Notes */
+		</style>
+	</head>
+	<body>
+		<center class="wrapper">
+			<div class="webkit">
+				<table class="outer">
+					<tbody>
+						<tr>
+							<td>
+								<!-- Header -->
+								<table class="section" style="margin-bottom: 16px; padding: 40px 0px">
+									<tbody>
+										<tr>
+											<td><img src="./assets/logo.png" alt="notable logo" style="max-width: 121px" /></td>
+											<td style="text-align: right">
+												<table style="margin: 0 0 0 auto">
+													<tbody>
+														<tr>
+															<td class="header_social-icon"><img src="./assets/social_facebook.png" alt="facebook icon" /></td>
+															<td class="header_social-icon"><img src="./assets/social_instagram.png" alt="instagram icon" /></td>
+															<td class="header_social-icon"><img src="./assets/social_twitter.png" alt="twitter icon" /></td>
+														</tr>
+													</tbody>
+												</table>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+								<!-- Main -->
+								<table class="section section-order text-large-regular" style="background-color: #ffffff">
+									<tbody>
+										<tr>
+											<td>
+												<p>
+													Hello <span class="text-large-bold">Customer</span> 👋 <br /><br />
+													Thank you for your purchase! We’ve received your order, we will notify you when it has been sent.
+												</p>
+											</td>
+										</tr>
+										<tr>
+											<td style="padding-top: 32px">
+												<p>
+													<span class="text-large-bold">Order details:</span>
+													<br />
+													No. Invoice: <a href="https://www.semoud.com/portfolio">#20220403</a>
+												</p>
+											</td>
+										</tr>
+										<!-- Order Products -->
+										<tr>
+											<td>
+												<table class="section" style="margin: 32px 0px">
+													<tbody>
+														<tr>
+															<td>
+																<!-- Product Item -->
+																<table class="section product-item">
+																	<tbody>
+																		<tr>
+																			<td class="product-item_image">
+																				<img src="./assets/product.png" alt="product" />
+																			</td>
+																			<td class="product-item_detail">
+																				<table class="section">
+																					<tbody>
+																						<tr>
+																							<td>
+																								<table class="section">
+																									<tbody>
+																										<tr>
+																											<td>
+																												<p class="text-large-bold" style="margin: 0px; width: 75%; display: inline-block">Jumbo GG Canvas Jacket</p>
+																												<p style="margin: 5px 0 10px; display: inline-block; text-align: right">£2,200</p>
+																											</td>
+																										</tr>
+																										<tr>
+																											<td class="text-medium-regular">
+																												<p>Size: Medium - Qty: X1</p>
+																											</td>
+																										</tr>
+																									</tbody>
+																								</table>
+																							</td>
+																						</tr>
+																					</tbody>
+																				</table>
+																			</td>
+																		</tr>
+																	</tbody>
+																</table>
+																<!-- Product Item -->
+																<table class="section product-item">
+																	<tbody>
+																		<tr>
+																			<td class="product-item_image">
+																				<img src="./assets/product.png" alt="product" />
+																			</td>
+																			<td class="product-item_detail">
+																				<table class="section">
+																					<tbody>
+																						<tr>
+																							<td>
+																								<table class="section">
+																									<tbody>
+																										<tr>
+																											<td>
+																												<p class="text-large-bold" style="margin: 0px; width: 75%; display: inline-block">Jumbo GG Canvas Jacket</p>
+																												<p style="margin: 5px 0 10px; display: inline-block; text-align: right">£2,200</p>
+																											</td>
+																										</tr>
+																										<tr>
+																											<td class="text-medium-regular">
+																												<p>Size: Medium - Qty: X1</p>
+																											</td>
+																										</tr>
+																									</tbody>
+																								</table>
+																							</td>
+																						</tr>
+																					</tbody>
+																				</table>
+																			</td>
+																		</tr>
+																	</tbody>
+																</table>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+											</td>
+										</tr>
+										<tr>
+											<td style="padding: 32px 0px; border-top: #e2e8f0 solid 1px">
+												<table class="section">
+													<tbody>
+														<tr>
+															<td>
+																<!-- Order Summary Row -->
+																<table class="section-summary-row">
+																	<tbody>
+																		<tr>
+																			<td>
+																				<p class="text-large-regular">Subtotal</p>
+																			</td>
+																			<td style="text-align: right">
+																				<p class="text-large-bold">£2,200</p>
+																			</td>
+																		</tr>
+																	</tbody>
+																</table>
+																<!-- Order Summary Row -->
+																<table class="section-summary-row">
+																	<tbody>
+																		<tr>
+																			<td>
+																				<p class="text-large-regular">Discount</p>
+																			</td>
+																			<td style="text-align: right">
+																				<p class="text-large-bold">£0</p>
+																			</td>
+																		</tr>
+																	</tbody>
+																</table>
+																<!-- Order Summary Row -->
+																<table class="section-summary-row">
+																	<tbody>
+																		<tr>
+																			<td>
+																				<p class="text-large-regular">Tax (20%)</p>
+																			</td>
+																			<td style="text-align: right">
+																				<p class="text-large-bold">£50</p>
+																			</td>
+																		</tr>
+																	</tbody>
+																</table>
+																<!-- Order Summary Row -->
+																<table class="section-summary-row">
+																	<tbody>
+																		<tr>
+																			<td>
+																				<p class="text-large-regular">Total</p>
+																			</td>
+																			<td style="text-align: right">
+																				<p class="text-large-bold">£2,200</p>
+																			</td>
+																		</tr>
+																	</tbody>
+																</table>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<table class="section">
+													<tbody>
+														<tr>
+															<td width="48%">
+																<a href="http://www.semoud.com/portfolio"
+																	><table class="section">
+																		<tbody>
+																			<tr>
+																				<td class="button">
+																					<p>View Transaction</p>
+																				</td>
+																			</tr>
+																		</tbody>
+																	</table></a
+																>
+															</td>
+															<td width="3%"></td>
+															<td width="48%">
+																<a href="http://www.semoud.com/portfolio"
+																	><table class="section">
+																		<tbody>
+																			<tr>
+																				<td class="button fill">
+																					<p>Shop Again</p>
+																				</td>
+																			</tr>
+																		</tbody>
+																	</table></a
+																>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+								<!-- Footer -->
+								<table class="section" style="margin: 24px 0px 0px">
+									<tbody>
+										<tr>
+											<td class="text-large-regular-alt" style="padding: 24px 0px">
+												<p>Notable at the touch of a button! Download our app for Google & Mac.</p>
+												<table>
+													<tbody>
+														<tr>
+															<td>IOS</td>
+															<td>Android</td>
+														</tr>
+													</tbody>
+												</table>
+												<p>
+													Questions or faq? Contact us at <a href="mailto:semoud.o@gmail.com">semoud.o@gmail.com</a>. If you'd rather not receive this kind of email, Don’t want any more emails from Notable? <a href="http://www.semoud.com/projects">Unsubscribe</a>. <br /><br />
+													100 Smith Street, Melbourne VIC 3000 <br />
+													© 2022 Notable
+												</p>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</center>
+	</body>
+</html>
